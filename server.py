@@ -14,6 +14,7 @@ server_socket.listen()
 sockets_list = [server_socket]
 clients = {}  # [socket] -> message
 
+
 def receive_message(client_socket):
     try:
         message_header = client_socket.recv(HEADER_LENGTH)
